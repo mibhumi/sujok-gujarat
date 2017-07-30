@@ -1,0 +1,26 @@
+ <html>
+<body>
+<center>
+ <table border=5>
+ <?php 
+    include('connect1.php');
+	$pid=$_REQUEST['pid'];
+	$str="select * from product where pid=$pid";
+	$result=mysqli_query($con,$str);
+	
+	while($row=mysqli_fetch_array($result))
+	{
+		echo "<tr>";
+		echo "<td>".$row[0]."</td>";
+		echo "<td>".$row[1]."</td>";
+		echo "<td><img src='upload/$row[2]' height=50 width=50></td>";
+		echo "<td>".$row[3]."</td>";
+		echo "<td>".$row[4]."</td>";
+		echo "</tr>";
+	}
+?>
+</table>
+<a href="logout1.php">log out</a>
+</center>
+</body>
+</html>

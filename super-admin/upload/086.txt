@@ -1,0 +1,802 @@
+		Roll No.: 86
+		Sem: 6th
+		Div: B
+
+
+		Subject: JAVA
+
+		1. Program to print a pattern, that displays the multiples of a number as shown in the example below. Eg: If a user enters 5, then 5*5 a matrix is created with multiples of 5.
+			5
+			10	15
+			20	25	30
+			35	40	45	50
+			55	60	65	70	75	
+		import java.io.*;
+		public class pattern 
+		{
+			public static void main(String args[]) throws IOException 
+			{
+				DataInputStream a=new DataInputStream(System.in);
+				System.out.println("enter any number: ");
+				int no=Integer.parseInt(a.readLine());
+				int k=0;
+				for(int i=0;i<no;i++)
+				{
+					for(int j=0;j<=i;j++)
+					{
+						k=k+no;
+						System.out.print(" "+k);
+					}
+					System.out.println();
+				}
+				
+			}
+		}
+
+		7. Calculate area of a shape using command line arguments. The shapes to be included are triangle, circle, square and rectangle. Make use of OOP concepts like abstract class, method overriding or overloading. Make use of Math class wherever applicable.
+		public class traingle extends shape
+		{
+		   traingle(double a,double b)
+		   {
+			   super(a,b);
+		   }
+		   void area()
+		   {
+			   System.out.println("area of traingle is:"+ 0.5*a*b);
+		   }
+		}
+		public class rectangle extends shape
+		{
+		   rectangle(double a,double b)
+		   {
+			   super(a,b);
+		   }
+		   void area()
+		   {
+			   System.out.println("area of rectangle is:"+a*b);
+		   }
+		}
+		public class circle extends shape
+		{
+		   circle(double c)
+		   {
+			   super(c);
+		   }
+		   void area()
+		   {
+			   System.out.println("area of circle is:"+ 3.14*c*c);
+		   }
+		}
+		public class square extends shape
+		{
+		   square(double c)
+		   {
+			   super(c);
+		   }
+		   void area()
+		   {
+			   System.out.println("area of square is:"+ c*c);
+		   }
+		}
+		abstract public class shape
+		{
+			double a,b,c;
+			shape(double x,double y)
+			{
+				a=x;
+				b=y;
+			}
+			shape(double z)
+			{
+				c=z;
+			}
+			abstract void area();
+		}
+		public class math
+		{
+			public static void main(String args[])
+			{
+				shape s;
+				rectangle r=new rectangle(4,5);
+				traingle t=new traingle(5,4);
+				square sa=new square(5);
+				circle c=new circle(4);
+				s=r;
+				s.area();
+				s=t;
+				s.area();
+				s=sa;
+				s.area();
+				s=c;
+				s.area();
+			}
+		}
+
+		8. Program for validating an E-Mail Address.
+		import java.util.*;
+		import java.io.*;
+		public class email
+		{
+			public static void main(String args[]) throws IOException
+			{
+				DataInputStream d=new DataInputStream(System.in);
+				System.out.println("enter email-id:");
+				String eid=d.readLine();
+				String regexp="^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
+				System.out.println(eid.matches(regexp));
+			}
+		}
+
+		9. Counting the number of occurrence of integer.
+		import java.io.*;
+		public class dupint
+		{
+			 public static void main(String args[])throws IOException
+			{
+				DataInputStream d=new DataInputStream(System.in);
+				System.out.print("enter integers:");
+				int n=Integer.parseInt(d.readLine());
+				do
+				{
+					int a[]=new int[n];
+					int a1=0;
+					for(int i=0;i<n;i++)
+					{
+						if(a[0]==a[i])
+						{
+							a1++;
+						}
+					}
+					if(a1!=0)
+					{
+					   System.out.println(a[0]+": "+a1);
+					   n=n.replaceall(""+a[0],"");
+					}
+				}
+				while(n!=0);
+				
+			}
+		}
+
+		4. Implement Linear Search
+		import java.io.*;
+		import java.lang.*;
+		public class linear
+		{
+		   public static void main(String args[])throws IOException
+		   {
+			   DataInputStream d=new DataInputStream(System.in);
+			   System.out.print("enter number:");
+			   int n=Integer.parseInt(d.readLine());
+			   int a[]=new int[n];
+			   int i,f=0;
+			   for(i=0;i<n;i++)
+			   {
+				   System.out.print("Enter element:");
+				   a[i]=Integer.parseInt(d.readLine());
+			   }
+			   System.out.println("array is:");
+			   for(i=0;i<n;i++)
+			   {
+				   System.out.print(" "+ a[i]);
+				   System.out.println(" ");
+			   }
+			   System.out.print("enter search array number:");
+			   int no=Integer.parseInt(d.readLine());
+			   for(i=0;i<n;i++)
+			   {
+				   if(a[i]==no)
+				   {
+					   f=1;
+					   break;
+				   }
+				   else
+				   {
+					   f=0;
+				   }
+			   }
+			   if(f==0)
+			   {
+				   System.out.print(no +" is not present in array");
+			   }
+			   else
+			   {
+				   System.out.print(no +" is present at location "+ (i+1));
+			   }
+		   }
+		}
+
+		5. Implement Binary Search
+		import java.io.*;
+		import java.lang.*;
+		public class binary
+		{
+			public static void main(String args[])throws IOException
+		   {
+			   DataInputStream d=new DataInputStream(System.in);
+			   System.out.print("enter number:");
+			   int n=Integer.parseInt(d.readLine());
+			   int a[]=new int[n];
+			   int c;
+			   for(int i=0;i<n;i++)
+			   {
+				   System.out.print("Enter element:");
+				   a[i]=Integer.parseInt(d.readLine());
+			   }
+			   System.out.println("array is:");
+			   for(int i=0;i<n;i++)
+			   {
+				   System.out.print(a[i]);
+				   System.out.println(" ");
+			   }
+			   for(int i=0;i<n;i++)
+			   {
+				   for(int j=0;j<n;j++)
+				   {
+					   if(a[i]<a[j])
+					   {
+						   c=a[i];
+						   a[i]=a[j];
+						   a[j]=c;
+					   }
+				   }
+			   }
+			   System.out.println("asscending order is:");
+			   for(int i=0;i<n;i++)
+			   {
+				   System.out.print(a[i]);
+				   System.out.println(" ");
+			   }
+			   System.out.print("enter search array number:");
+			   int no=Integer.parseInt(d.readLine());
+			   int mid,low,hig;
+			   low=0;
+			   hig=n-1;
+			   mid=(low+hig)/2;
+			   while(low<=hig)
+			   {
+				   if(a[mid]==no)
+				   {
+					   System.out.print(no +" element found at location " +(mid+1));
+					   break;
+				   }
+				   else if(a[mid]<no)
+				   {
+					   low=mid+1;
+				   }
+				   else
+				   {
+					   hig=mid-1;
+				   }
+				   mid=(low+hig)/2;
+			   }
+			   if(low>hig)
+			   {
+				   System.out.print("element not found..");
+			   }
+			}
+		}
+
+
+		question 5: jdbc
+
+		book_insert
+		import java.sql.*;
+		import java.util.*;
+		public class book_insert
+		{
+		   public static void main(String args[])
+		   {
+			   try
+			   {
+						 
+				   
+				   Scanner nm=new Scanner(System.in);
+				   System.out.println("Enter book name");
+				   String name=nm.nextLine();
+				   
+				   Scanner au=new Scanner(System.in);
+				   System.out.println("Enter book author name");
+				   String author=au.nextLine();
+				   
+				   Scanner pb=new Scanner(System.in);
+				   System.out.println("Enter book publication name");
+				   String publication=pb.nextLine();
+				   
+				   Scanner pr=new Scanner(System.in);
+				   System.out.println("Enter book price");
+				   String price=pr.nextLine();
+				  
+			   int count;
+			   Class.forName("com.mysql.jdbc.Driver");
+			   Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/library","root","");
+				PreparedStatement s;
+				s=con.prepareStatement("INSERT INTO book(name,author,publication,price) VALUES(?,?,?,?)");
+			   
+			
+						s.setString(1,name);
+						s.setString(2,author);
+						s.setString(3,publication);
+						s.setString(4,price);
+						count = s.executeUpdate();
+						s.close ();
+						System.out.println(count + " rows were inserted");
+						
+						
+						
+						
+						Statement stmt=con.createStatement(); 
+						ResultSet rs = stmt.executeQuery("SELECT * FROM book");
+
+				while(rs.next())
+				{
+					 
+						 System.out.print(" book Name: " + rs.getString("name"));
+						 System.out.print(" author Name: " + rs.getString("author"));
+						 System.out.print(" publication Name: " + rs.getString("publication"));
+						 System.out.print(" price Name: " + rs.getString("price"));
+						 System.out.println("");
+					
+				}
+					rs.close();
+			  
+			}
+				catch(Exception e)
+				{
+					e.printStackTrace();
+				}
+				
+			}  
+		}
+		book_delete
+		import java.sql.*;
+		import java.util.*;
+		public class delete
+		{
+		   public static void main(String args[])
+		   {
+			   try
+			   {
+				   
+				int count;
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/library","root","");
+				PreparedStatement s;
+				s=con.prepareStatement("DELETE FROM book WHERE name=?");
+				
+				   Scanner nm=new Scanner(System.in);
+				   System.out.println("Enter book name");
+				   String name=nm.nextLine();
+				   
+						s.setString(1,name);
+					   //s.setInt(1,0);
+						count = s.executeUpdate();
+						s.close ();
+						System.out.println(count + " rows were deleted");
+						s.close();
+						
+					  Statement stmt=con.createStatement(); 
+						ResultSet rs = stmt.executeQuery("SELECT * FROM book");
+
+				while(rs.next())
+				{
+					 
+						 System.out.println("book Name: " + rs.getString("name"));
+						 System.out.println("author Name: " + rs.getString("author"));
+						 System.out.println("publication Name: " + rs.getString("publication"));
+						 System.out.println("price Name: " + rs.getString("price"));
+						 System.out.println("");
+					
+				}
+					rs.close();
+			 
+			}
+				catch(Exception e)
+				{
+					e.printStackTrace();
+				}
+				
+			}  
+		}
+		book_update 
+		import java.sql.*;
+		import java.util.*;
+		public class update
+		{
+		   public static void main(String args[])
+		   {
+			   try
+			   {
+				 Scanner nm=new Scanner(System.in);
+				   System.out.println("Enter book name");
+				   String name=nm.nextLine();
+				   
+				   Scanner au=new Scanner(System.in);
+				   System.out.println("Enter book author name");
+				   String author=au.nextLine();
+				   
+				   Scanner pb=new Scanner(System.in);
+				   System.out.println("Enter book publication name");
+				   String publication=pb.nextLine();
+				   
+				   Scanner pr=new Scanner(System.in);
+				   System.out.println("Enter book price");
+				   String price=pr.nextLine();
+				  
+		  
+				int count;
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/library","root","");
+				PreparedStatement s;
+				s=con.prepareStatement("UPDATE book set author=?,publication=?,price=? WHERE name=?");
+				
+				   
+				   
+						s.setString(1,author);
+						s.setString(2,publication);
+						s.setString(3,price);
+						s.setString(4,name);
+					   //s.setInt(1,0);
+						count = s.executeUpdate();
+						s.close ();
+						System.out.println(count + " rows were deleted");
+						s.close();
+						
+					  Statement stmt=con.createStatement(); 
+						ResultSet rs = stmt.executeQuery("SELECT * FROM book");
+
+				while(rs.next())
+				{
+					 
+						 System.out.println("book Name: " + rs.getString("name"));
+						 System.out.println("author Name: " + rs.getString("author"));
+						 System.out.println("publication Name: " + rs.getString("publication"));
+						 System.out.println("price Name: " + rs.getString("price"));
+						 System.out.println("");
+					
+				}
+					rs.close();
+			 
+			}
+				catch(Exception e)
+				{
+					e.printStackTrace();
+				}
+				
+			}  
+		}
+
+
+		17. Write a program for implementing mouseListener.
+		public class ap3 extends Applet implements MouseListener
+		{
+			int x;
+			int y;
+			String s=" ";
+			public void init()
+			{
+				setBackground(Color.cyan);
+				setForeground(Color.blue);
+				setFont(new Font("Arial",Font.BOLD,20));
+				add Mouselistener(this);
+			}
+			public void mousePressed(MouseEvent e)
+			{
+				x=e.getx();
+				y=e.gety();
+				s="raja";
+				repaint();
+			}
+		}
+
+		18.Moving ball
+
+		import java.applet.*;
+		import java.awt.*;
+
+		 /* <applet code = "ball" width = 400 height = 200> </applet> */
+		public class ball extends Applet implements Runnable
+		 {
+		 Thread t;
+		 int x = 0;
+		 int y = 0;
+
+		public void start()
+		 {
+		 t = new Thread(this);
+		 t.start();
+		 }
+
+		public void paint(Graphics g)
+		   {
+			  g.fillOval(x,y,100,100);
+			}
+
+		public void run()
+		 {
+		   try
+			  {
+			 for(;;)
+			  {
+					  for(;;)
+				   {
+						if(y == 120)
+							{
+							 break;
+							}
+			else if (x == 390)
+				{
+			 x = 0;
+			 y = 0;
+			repaint();
+				 }
+						   else
+							{
+							y = y +3;
+							 x = x +3;
+							 Thread.sleep(100);
+					  repaint();
+					  }
+					   }
+				  for(;;)
+					 {
+					  if(y==0)
+						  {
+								break;
+								}
+					  else if (x == 390)
+				  {
+				  x = 0;
+				  y = 0;
+						 repaint();
+			}
+			else
+						 {
+				y = y-3;
+					  x = x +3;
+					  Thread.sleep(100);
+					   repaint();
+					  }
+					   }
+				   run();
+			   }
+		  }
+
+		catch(InterruptedException e)
+			{
+
+			}
+		 }
+		}
+
+
+
+		Subject: Linux
+
+		1.Display Age
+		echo "enter your age";
+		read age;
+		echo "your age is $age";
+
+		2.Date Format
+		date +%X" "%a" "%d" "%b" "%Y;
+
+		3.user name and Pocess
+		echo "user name is $USER";
+
+		4.Print User name
+		echo "enter user name";
+		read uname;
+		if [ $uname = $USER ]
+		then
+		echo "well come to $uname";
+		fi
+
+		5.Mannual Select
+		echo "which is capital of gujarat";
+		echo "1.surat";
+		echo "2.gandhinagar";
+		echo "3.mumbai";
+		read c1;
+		if [ $c1 -eq 1 ]
+		then
+		echo "ans is incorrect";
+		elif [ $c1 -eq 2 ]
+		then
+		echo "ans is correct";
+		else
+		[ $c1 -eq 3 ]
+		echo "ans is incorrect";
+		fi
+
+		6.Display name provide by user is file or directory
+		echo "enter file name";
+		read f1;
+		if [ -f $f1 ]
+		then
+		echo "$f1 is file";
+		elif [ -d $f1 ]
+		then
+		echo "$f1 is dir";
+		else
+		echo "no file is found";
+		fi
+
+		7.Enter capital of gujarat if true then display proper message otherwise incorrect answer
+		echo "enter capital of gujarat";
+		read cap;
+		while [ "$cap" != "GANDHINAGAR" ]
+		do
+		echo "incorrect answer";
+		echo " enter capital latter in capital of gujarat";
+		read cap;
+		done
+		echo "$cap ic capital of gujarat";
+
+		8.Take Name and traslate into upper case
+		echo "enter name";
+		read name;
+		echo "$name"| cat >> o1;
+		tr "[a-z]" "[A-Z]" < o1 > o2;
+
+		9.Pattern
+		echo -n "Enter the number of Row "
+		read NR
+
+		typeset -A arr
+		#declare -a arr
+
+		for i in `seq 0 $NR`;do
+		 arr[$i,0]=1 #start is 1
+		 arr[$i,$i]=1  #end is 1
+		 p=$((i-1))
+		 #for j in `seq 1 $p`;do 
+		  for ((j=1;j<$i;j++));do
+		   a=${arr[$((i-1)),$((j-1))]}
+		   b=${arr[$((i-1)),$j]}
+		   arr[$i,$j]=$((a+b))
+		 done
+		#echo ${arr[$i]}
+		done
+		#print result
+		for ((i=0;i<=$NR;i++));do
+		for((j=0;j<=$i;j++))
+		do
+		  echo -n ${arr[$i,$j]} " "
+		done
+		 printf "\n"
+		done
+
+		10.Awk example
+		BEGIN
+		{
+
+		}
+		{
+			sfile=$1
+			dfile=$2
+			cpcmd="cp" $1 "" $2
+			printf"coping %s to %sh",sfile,dfile
+			system(cpcmd)
+		}
+		END
+		{
+		}
+		
+		
+		
+		
+
+		Subject: PHP
+
+		1. Delete user table record code.
+		<?php
+		include("conect.php");
+		if(isset($_REQUEST['did']))
+		{
+			$sql="delete from user where id=".$_REQUEST['did'];
+			$result=mysql_query($sql);
+			if(!empty($result))
+			{
+				header("location:user.php");
+			}
+		}
+		?>
+
+		2. Update product table records.
+		<?php
+		session_start();
+		include("conect.php");
+		$no=$_SESSION['eid'];
+		if(isset($_SESSION['eid']))
+		{
+			$cnm=$_POST["nm"];
+			$cid=$_POST["cid"];
+			$price=$_POST["pr"];
+			$sql="update product set name='$cnm',cat_id='$cid',price='$price' where id='$no'";
+			if(!mysql_query($sql))
+			{
+				die("error");
+			}
+			else
+			{
+				header("location:product.php");	
+			}
+		}
+		?>
+		<?php
+		session_start();
+		include("conect.php");
+		$sql="select name,cat_id,price from product where id=".$_REQUEST['eid'];
+		$_SESSION['eid']=$_REQUEST['eid'];
+		$result=mysql_query($sql);
+		if(mysql_num_rows($result)>0)
+		{
+			while($row=mysql_fetch_assoc($result))
+			{
+				$cnm=$row["name"];
+				$cid=$row["cat_id"];
+				$pc=$row["price"];
+			}
+		}
+		?>
+		<html>
+		<body>
+		<form method="post" action="update.php">
+		<table>
+		<tr>
+		<td>Name:</td>
+		<td><input type="text" name="nm" value="<?php echo $cnm; ?>"></td>
+		</tr>
+		<tr>
+		<td>Category_ID:</td>
+		<td><input type="text" name="cid" value="<?php echo $cid; ?>"></td>
+		</tr>
+		<tr>
+		<td>Price:</td>
+		<td><input type="text" name="pr" value="<?php echo $pc; ?>"></td>
+		</tr>
+		<tr>
+		<td></td>
+		<td><input type="submit" name="submit" value="Update Data"></td>
+		</tr>
+		</table>
+		</form>
+		</body>
+		</html>
+
+		3. Product display.
+		<html>
+		<body>
+		<?php
+		include("conect.php");
+		$sql="select * from product";
+		$result=mysql_query($sql)
+		or die("query failed". mysql_error());
+		?>
+		<h1>Product table</h1>
+		<table border="3">
+		<tr>
+		<td>Name</td>
+		<td>Category-ID</td>
+		<td>Price</td>
+		<td>Update</td>
+		<td>Delete</td>
+		</tr>
+		<?php
+		while($row=mysql_fetch_array($result))
+		{
+		?>
+			<tr>
+			<td><?php echo $row["name"]; ?></td>
+			<td><?php echo $row["cat_id"]; ?></td>
+			<td><?php echo $row["price"]; ?></td>
+			<td><a href="update_form.php?eid=<?php echo $row['id']; ?>">Update</a></td>
+			<td><a href="delete.php?did=<?php echo $row['id']; ?>">Delete</a></td>
+			</tr>
+		<?php
+		}
+		?>
+		</table>
+		</body>
+		</html>

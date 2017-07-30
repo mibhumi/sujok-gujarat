@@ -1,0 +1,1842 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets\images\favicon.ico">
+        <!-- App title -->
+        <title>Zircos - Responsive Admin Dashboard Template</title>
+
+        <!-- Plugins css-->
+        <link href="../plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet">
+        <link href="../plugins/multiselect/css/multi-select.css" rel="stylesheet" type="text/css">
+        <link href="../plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css">
+        <link href="../plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+        <link href="../plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+
+        <!-- App css -->
+        <link href="assets\css\bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets\css\core.css" rel="stylesheet" type="text/css">
+        <link href="assets\css\components.css" rel="stylesheet" type="text/css">
+        <link href="assets\css\icons.css" rel="stylesheet" type="text/css">
+        <link href="assets\css\pages.css" rel="stylesheet" type="text/css">
+        <link href="assets\css\menu.css" rel="stylesheet" type="text/css">
+        <link href="assets\css\responsive.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="assets\js\modernizr.min.js"></script>
+<script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-83057131-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+    </head>
+
+
+    <body class="fixed-left">
+
+        <!-- Loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                  <div class="spinner-wrapper">
+                    <div class="rotator">
+                      <div class="inner-spin"></div>
+                      <div class="inner-spin"></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="index.htm" class="logo"><span>Zir<span>cos</span></span><i class="mdi mdi-cube"></i></a>
+                    <!-- Image logo -->
+                    <!--<a href="index.html" class="logo">-->
+                        <!--<span>-->
+                            <!--<img src="assets/images/logo.png" alt="" height="30">-->
+                        <!--</span>-->
+                        <!--<i>-->
+                            <!--<img src="assets/images/logo_sm.png" alt="" height="28">-->
+                        <!--</i>-->
+                    <!--</a>-->
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+
+                        <!-- Navbar-left -->
+                        <ul class="nav navbar-nav navbar-left">
+                            <li>
+                                <button class="button-menu-mobile open-left waves-effect waves-light">
+                                    <i class="mdi mdi-menu"></i>
+                                </button>
+                            </li>
+                            <li class="hidden-xs">
+                                <form role="search" class="app-search">
+                                    <input type="text" placeholder="Search..." class="form-control">
+                                    <a href=""><i class="fa fa-search"></i></a>
+                                </form>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#" class="menu-item waves-effect waves-light">New</a>
+                            </li>
+                            <li class="dropdown hidden-xs">
+                                <a data-toggle="dropdown" class="dropdown-toggle menu-item waves-effect waves-light" href="#" aria-expanded="false">English
+                                    <span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="#">German</a></li>
+                                    <li><a href="#">French</a></li>
+                                    <li><a href="#">Italian</a></li>
+                                    <li><a href="#">Spanish</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- Right(Notification) -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#" class="right-menu-item dropdown-toggle" data-toggle="dropdown">
+                                    <i class="mdi mdi-bell"></i>
+                                    <span class="badge up bg-primary">4</span>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right dropdown-lg user-list notify-list">
+                                    <li>
+                                        <h5>Notifications</h5>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-list-item">
+                                            <div class="icon bg-info">
+                                                <i class="mdi mdi-account"></i>
+                                            </div>
+                                            <div class="user-desc">
+                                                <span class="name">New Signup</span>
+                                                <span class="time">5 hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-list-item">
+                                            <div class="icon bg-danger">
+                                                <i class="mdi mdi-comment"></i>
+                                            </div>
+                                            <div class="user-desc">
+                                                <span class="name">New Message received</span>
+                                                <span class="time">1 day ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-list-item">
+                                            <div class="icon bg-warning">
+                                                <i class="mdi mdi-settings"></i>
+                                            </div>
+                                            <div class="user-desc">
+                                                <span class="name">Settings</span>
+                                                <span class="time">1 day ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="all-msgs text-center">
+                                        <p class="m-0"><a href="#">See all Notification</a></p>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="right-menu-item dropdown-toggle" data-toggle="dropdown">
+                                    <i class="mdi mdi-email"></i>
+                                    <span class="badge up bg-danger">8</span>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right dropdown-lg user-list notify-list">
+                                    <li>
+                                        <h5>Messages</h5>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-list-item">
+                                            <div class="avatar">
+                                                <img src="assets\images\users\avatar-2.jpg" alt="">
+                                            </div>
+                                            <div class="user-desc">
+                                                <span class="name">Patricia Beach</span>
+                                                <span class="desc">There are new settings available</span>
+                                                <span class="time">2 hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-list-item">
+                                            <div class="avatar">
+                                                <img src="assets\images\users\avatar-3.jpg" alt="">
+                                            </div>
+                                            <div class="user-desc">
+                                                <span class="name">Connie Lucas</span>
+                                                <span class="desc">There are new settings available</span>
+                                                <span class="time">2 hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-list-item">
+                                            <div class="avatar">
+                                                <img src="assets\images\users\avatar-4.jpg" alt="">
+                                            </div>
+                                            <div class="user-desc">
+                                                <span class="name">Margaret Becker</span>
+                                                <span class="desc">There are new settings available</span>
+                                                <span class="time">2 hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="all-msgs text-center">
+                                        <p class="m-0"><a href="#">See all Messages</a></p>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" class="right-bar-toggle right-menu-item">
+                                    <i class="mdi mdi-settings"></i>
+                                </a>
+                            </li>
+
+                            <li class="dropdown user-box">
+                                <a href="" class="dropdown-toggle waves-effect waves-light user-link" data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets\images\users\avatar-1.jpg" alt="user-img" class="img-circle user-img">
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right user-list notify-list">
+                                    <li>
+                                        <h5>Hi, John</h5>
+                                    </li>
+                                    <li><a href="javascript:void(0)"><i class="ti-user m-r-5"></i> Profile</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-settings m-r-5"></i> Settings</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-lock m-r-5"></i> Lock screen</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-power-off m-r-5"></i> Logout</a></li>
+                                </ul>
+                            </li>
+
+                        </ul> <!-- end navbar-right -->
+
+                    </div><!-- end container -->
+                </div><!-- end navbar -->
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <div class="user-details">
+                            <div class="overlay"></div>
+                            <div class="text-center">
+                                <img src="assets\images\users\avatar-1.jpg" alt="" class="thumb-md img-circle">
+                            </div>
+                            <div class="user-info">
+                                <div>
+                                    <a href="#setting-dropdown" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Daniel Syme <span class="mdi mdi-menu-down"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown" id="setting-dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)"><i class="mdi mdi-face-profile m-r-5"></i> Profile</a></li>
+                                <li><a href="javascript:void(0)"><i class="mdi mdi-account-settings-variant m-r-5"></i> Settings</a></li>
+                                <li><a href="javascript:void(0)"><i class="mdi mdi-lock m-r-5"></i> Lock screen</a></li>
+                                <li><a href="javascript:void(0)"><i class="mdi mdi-logout m-r-5"></i> Logout</a></li>
+                            </ul>
+                        </div>
+
+                        <ul>
+                        	<li class="menu-title">Navigation</li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-view-dashboard"></i><span class="badge badge-success pull-right">2</span> <span> Dashboard </span> </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="index.htm">Dashboard 1</a></li>
+                                    <li><a href="dashboard_2.htm">Dashboard 2</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-invert-colors"></i> <span> User Interface </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="ui-buttons.htm">Buttons</a></li>
+                                    <li><a href="ui-typography.htm">Typography</a></li>
+                                    <li><a href="ui-panels.htm">Panel</a></li>
+                                    <li><a href="ui-portlets.htm">Portlets</a></li>
+                                    <li><a href="ui-modals.htm">Modals</a></li>
+                                    <li><a href="ui-checkbox-radio.htm">Checkboxs-Radios</a></li>
+                                    <li><a href="ui-tabs.htm">Tabs</a></li>
+                                    <li><a href="ui-progressbars.htm">Progress Bars</a></li>
+                                    <li><a href="ui-notifications.htm">Notification</a></li>
+                                    <li><a href="ui-alerts.htm">Alerts</a>
+                                    <li><a href="ui-carousel.htm">Carousel</a>
+                                    <li><a href="ui-video.htm">Video</a>
+                                    <li><a href="ui-tooltips-popovers.htm">Tooltips & Popovers</a></li>
+                                    <li><a href="ui-images.htm">Images</a></li>
+                                    <li><a href="ui-bootstrap.htm">Bootstrap UI</a></li>
+                                    <li><a href="ui-grid.htm">Grid</a></li>
+                                </li></li></li></ul>
+                            
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-layers"></i><span> Admin UI </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="admin-sweet-alert.htm">Sweet Alert</a></li>
+                                    <li><a href="admin-widgets.htm">Widgets</a></li>
+                                    <li><a href="admin-nestable.htm">Nestable List</a></li>
+                                    <li><a href="admin-rangeslider.htm">Range Slider</a></li>
+                                    <li><a href="admin-ratings.htm">Ratings</a></li>
+                                    <li><a href="admin-animation.htm">Animation</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="calendar.htm" class="waves-effect"><i class="mdi mdi-calendar"></i><span> Calendar </span></a>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-email"></i><span> Email </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="email-inbox.htm"> Inbox</a></li>
+                                    <li><a href="email-read.htm"> Read Mail</a></li>
+                                    <li><a href="email-compose.htm"> Compose Mail</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-heart-outline"></i><span> Icons </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="icons-glyphicons.htm">Glyphicons</a></li>
+                                    <li><a href="icons-colored.htm">Colored Icons</a></li>
+                                    <li><a href="icons-materialdesign.htm">Material Design</a></li>
+                                    <li><a href="icons-ionicons.htm">Ion Icons</a></li>
+                                    <li><a href="icons-fontawesome.htm">Font awesome</a></li>
+                                    <li><a href="icons-themifyicon.htm">Themify Icons</a></li>
+                                    <li><a href="icons-typicons.htm">Typicons</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-diamond"></i><span class="badge badge-danger pull-right">New</span> <span> Forms </span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="form-elements.htm">Form Elements</a></li>
+                                    <li><a href="form-advanced.htm">Form Advanced</a></li>
+                                    <li><a href="form-validation.htm">Form Validation</a></li>
+                                    <li><a href="form-pickers.htm">Form Pickers</a></li>
+                                    <li><a href="form-wizard.htm">Form Wizard</a></li>
+                                    <li><a href="form-mask.htm">Form Masks</a></li>
+                                    <li><a href="form-summernote.htm">Summernote</a></li>
+                                    <li><a href="form-wysiwig.htm">Wysiwig Editors</a></li>
+                                    <li><a href="form-uploads.htm">Multiple File Upload</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Tables </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                	<li><a href="tables-basic.htm">Basic Tables</a></li>
+                                    <li><a href="tables-layouts.htm">Tables Layouts</a></li>
+                                    <li><a href="tables-datatable.htm">Data Table</a></li>
+                                    <li><a href="tables-responsive.htm">Responsive Table</a></li>
+                                    <li><a href="tables-tablesaw.htm">Tablesaw Table</a></li>
+                                    <li><a href="tables-editable.htm">Editable Table</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-title">Extra</li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-chart-arc"></i><span> Charts </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="chart-flot.htm">Flot Chart</a></li>
+                                    <li><a href="chart-morris.htm">Morris Chart</a></li>
+                                    <li><a href="chart-google.htm">Google Chart</a></li>
+                                    <li><a href="chart-chartist.htm">Chartist Charts</a></li>
+                                    <li><a href="chart-chartjs.htm">Chartjs Chart</a></li>
+                                    <li><a href="chart-c3.htm">C3 Chart</a></li>
+                                    <li><a href="chart-sparkline.htm">Sparkline Chart</a></li>
+                                    <li><a href="chart-knob.htm">Jquery Knob</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-map"></i> <span> Maps </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                	<li><a href="maps-google.htm">Google Maps</a></li>
+                                    <li><a href="maps-vector.htm">Vector Maps</a></li>
+                                    <li><a href="maps-mapael.htm">Mapael Maps</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-google-pages"></i><span> Pages </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="page-starter.htm">Starter Page</a></li>
+                                    <li><a href="page-login.htm">Login</a></li>
+                                    <li><a href="page-register.htm">Register</a></li>
+                                    <li><a href="page-logout.htm">Logout</a></li>
+                                    <li><a href="page-recoverpw.htm">Recover Password</a></li>
+                                    <li><a href="page-lock-screen.htm">Lock Screen</a></li>
+                                    <li><a href="page-confirm-mail.htm">Confirm Mail</a></li>
+                                    <li><a href="page-404.htm">Error 404</a></li>
+                                    <li><a href="page-404-alt.htm">Error 404-alt</a></li>
+                                    <li><a href="page-500.htm">Error 500</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-gift"></i><span> Extras </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="extras-profile.htm">Profile</a></li>
+                                    <li><a href="extras-sitemap.htm">Sitemap</a></li>
+                                    <li><a href="extras-about.htm">About Us</a></li>
+                                    <li><a href="extras-contact.htm">Contact</a></li>
+                                    <li><a href="extras-members.htm">Members</a></li>
+                                    <li><a href="extras-timeline.htm">Timeline</a></li>
+                                    <li><a href="extras-invoice.htm">Invoice</a></li>
+                                    <li><a href="extras-search-result.htm">Search Result</a></li>
+                                    <li><a href="extras-emailtemplate.htm">Email Template</a></li>
+                                    <li><a href="extras-maintenance.htm">Maintenance</a></li>
+                                    <li><a href="extras-coming-soon.htm">Coming Soon</a></li>
+                                    <li><a href="extras-faq.htm">FAQ</a></li>
+                                    <li><a href="extras-gallery.htm">Gallery</a></li>
+                                    <li><a href="extras-pricing.htm">Pricing</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-title">More</li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-comment-text-outline"></i><span> Blog </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="blogs-dashboard.htm">Dashboard</a></li>
+                                    <li><a href="blogs-blog-list.htm">Blog List</a></li>
+                                    <li><a href="blogs-blog-column.htm">Blog Column</a></li>
+                                    <li><a href="blogs-blog-post.htm">Blog Post</a></li>
+                                    <li><a href="blogs-blog-add.htm">Add Blog</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-home-map-marker"></i><span> Real Estate </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="real-estate-dashboard.htm">Dashboard</a></li>
+                                    <li><a href="real-estate-list.htm">Property List</a></li>
+                                    <li><a href="real-estate-column.htm">Property Column</a></li>
+                                    <li><a href="real-estate-detail.htm">Property Detail</a></li>
+                                    <li><a href="real-estate-agents.htm">Agents</a></li>
+                                    <li><a href="real-estate-profile.htm">Agent Details</a></li>
+                                    <li><a href="real-estate-add.htm">Add Property</a></li>
+                                </ul>
+                            </li>
+
+                        </li></ul>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+
+                    <div class="help-box">
+                        <h5 class="text-muted m-t-0">For Help ?</h5>
+                        <p class=""><span class="text-dark"><b>Email:</b></span> <br> support@support.com</p>
+                        <p class="m-b-0"><span class="text-dark"><b>Call:</b></span> <br> (+123) 123 456 789</p>
+                    </div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container">
+
+
+                        <div class="row">
+							<div class="col-xs-12">
+								<div class="page-title-box">
+                                    <h4 class="page-title">Advanced Plugins </h4>
+                                    <ol class="breadcrumb p-0 m-0">
+                                        <li>
+                                            <a href="#">Zircos</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Forms </a>
+                                        </li>
+                                        <li class="active">
+                                            Advanced Plugins
+                                        </li>
+                                    </ol>
+                                    <div class="clearfix"></div>
+                                </div>
+							</div>
+						</div>
+                        <!-- end row -->
+
+
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="card-box">
+
+                                    <div class="row">
+                                        <div class="col-xs-12">
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="demo-box">
+                                                        <h4 class="header-title m-t-0 m-b-20">Tags Input</h4>
+
+                                                        <h6>Input Tags</h6>
+                                                        <p class="text-muted m-b-20 font-13">
+                                                            Just add <code>data-role="tagsinput"</code> to your input field to automatically change it to a tags input field.
+                                                        </p>
+                                                        <div class="tags-default">
+                                                            <input type="text" value="Amsterdam,Washington,Sydney" data-role="tagsinput" placeholder="add tags">
+                                                        </div>
+
+                                                        <h6 class="m-t-30">True multi value</h6>
+                                                        <p class="text-muted m-b-20 font-13">
+                                                              Use a <code>&lt;select multiple /&gt;</code> as your input element for a tags input, to gain true multivalue support.
+                                                               Instead of a comma separated string, the values will be set in an array. Existing <code>&lt;option /&gt;</code>
+                                                               elements will automatically be set as tags. This makes it also possible to create tags containing a comma.
+                                                        </p>
+                                                        <div class="m-b-0">
+                                                            <select multiple="" data-role="tagsinput">
+                                                                <option value="Amsterdam">Amsterdam
+                                                                <option value="Washington">Washington
+                                                                <option value="Sydney">Sydney
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="demo-box">
+                                                        <h4 class="header-title m-t-0 m-b-0">Switchery</h4>
+
+                                                        <h6>Basic</h6>
+                                                        <p class="text-muted m-b-20 font-13">
+                                                            Add an attribute <code>
+                                                                data-plugin="switchery" data-color="@colors"</code>
+                                                            to your input element and it will be converted into switch.
+                                                        </p>
+
+                                                        <div class="switchery-demo">
+                                                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#039cfd">
+                                                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#f1b53d">
+                                                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#1bb99a">
+                                                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#ff5d48">
+                                                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#3db9dc">
+                                                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#2b3d51">
+                                                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#9261c6">
+                                                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#ff7aa3">
+                                                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#98a6ad">
+                                                        </div>
+
+
+                                                        <h6 class="m-t-30">Sizes & Secondary color</h6>
+                                                        <p class="text-muted m-b-30 font-13">
+                                                            Add an attribute <code>
+                                                                 data-size="small",data-size="large"</code>
+                                                            to your input element and it will be converted into switch.
+                                                            Add an attribute <code>
+                                                                data-color="@color" data-secondary-color="@color"</code>
+                                                            to your input element and it will be converted into switch.
+                                                        </p>
+
+                                                        <div class="switchery-demo">
+                                                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#64b0f2" data-size="small">
+                                                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#ff7aa3">
+                                                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#2b3d51" data-size="large">
+                                                            <input type="checkbox" data-plugin="switchery" data-color="#1bb99a" data-secondary-color="#ff5d48">
+                                                            <input type="checkbox" data-plugin="switchery" data-color="#9261c6" data-secondary-color="#ff7aa3" checked="">
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div><!-- end row -->
+
+                                        </div>
+
+                                    </div>
+                                    <!-- end row -->
+
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+
+                                            <div class="demo-box m-t-50">
+                                                <h4 class="header-title m-t-0">Css Switch</h4>
+                                                <p class="text-muted m-b-20 font-13">
+                                                    Here are a few types of switches.
+                                                </p>
+
+                                                <div>
+                                                    <input type="checkbox" id="switch1" checked="" switch="none">
+                                                    <label for="switch1" data-on-label="On" data-off-label="Off"></label>
+
+                                                    <input type="checkbox" id="switch2" switch="default">
+                                                    <label for="switch2" data-on-label="" data-off-label=""></label>
+
+                                                    <input type="checkbox" id="switch3" switch="bool">
+                                                    <label for="switch3" data-on-label="Yes" data-off-label="No"></label>
+
+                                                    <input type="checkbox" id="switch6" switch="primary" checked/="">
+                                                    <label for="switch6" data-on-label="Yes" data-off-label="No"></label>
+
+                                                    <input type="checkbox" id="switch4" switch="success" checked/="">
+                                                    <label for="switch4" data-on-label="Yes" data-off-label="No"></label>
+
+                                                    <input type="checkbox" id="switch7" switch="info" checked/="">
+                                                    <label for="switch7" data-on-label="Yes" data-off-label="No"></label>
+
+                                                    <input type="checkbox" id="switch5" switch="warning">
+                                                    <label for="switch5" data-on-label="Yes" data-off-label="No"></label>
+
+                                                    <input type="checkbox" id="switch8" switch="danger" checked/="">
+                                                    <label for="switch8" data-on-label="Yes" data-off-label="No"></label>
+
+                                                    <input type="checkbox" id="switch9" switch="inverse" checked/="">
+                                                    <label for="switch9" data-on-label="Yes" data-off-label="No"></label>
+
+                                                    <input type="checkbox" id="switch10" switch="orange" checked/="">
+                                                    <label for="switch10" data-on-label="Yes" data-off-label="No"></label>
+
+                                                    <input type="checkbox" id="switch11" switch="brown" checked/="">
+                                                    <label for="switch11" data-on-label="Yes" data-off-label="No"></label>
+
+                                                    <input type="checkbox" id="switch12" switch="teal" checked/="">
+                                                    <label for="switch12" data-on-label="Yes" data-off-label="No"></label>
+
+                                                    <input type="checkbox" id="switch13" switch="pink" checked/="">
+                                                    <label for="switch13" data-on-label="Yes" data-off-label="No"></label>
+
+                                                    <input type="checkbox" id="switch14" switch="purple" checked/="">
+                                                    <label for="switch14" data-on-label="Yes" data-off-label="No"></label>
+
+                                                </div>
+                                            </div>
+
+                                        </div> <!-- end col -->
+
+                                        <div class="col-md-6">
+
+                                            <div class="demo-box m-t-50">
+                                                <h4 class="header-title m-t-0">Button Switch</h4>
+                                                <p class="text-muted m-b-20 font-13">
+                                                    Here are a few types of switches.
+                                                </p>
+
+                                                <div class="button-list">
+
+                                                    <div class="btn-switch btn-switch-custom">
+                                                        <input type="checkbox" id="input-btn-switch-custom">
+                                                        <label for="input-btn-switch-custom" class="btn btn-rounded btn-custom waves-effect waves-light">
+                                                            <em class="glyphicon glyphicon-ok"></em>
+                                                            <strong> Custom</strong>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="btn-switch btn-switch-primary">
+                                                        <input type="checkbox" id="input-btn-switch-primary">
+                                                        <label for="input-btn-switch-primary" class="btn btn-rounded btn-primary waves-effect waves-light">
+                                                            <em class="glyphicon glyphicon-ok"></em>
+                                                            <strong> Primary</strong>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="btn-switch btn-switch-success">
+                                                        <input type="checkbox" id="input-btn-switch-success" checked/="">
+                                                        <label for="input-btn-switch-success" class="btn btn-rounded btn-success waves-effect waves-light">
+                                                            <em class="glyphicon glyphicon-ok"></em>
+                                                            <strong> Success</strong>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="btn-switch btn-switch-info">
+                                                        <input type="checkbox" id="input-btn-switch-info">
+                                                        <label for="input-btn-switch-info" class="btn btn-rounded btn-info waves-effect waves-light">
+                                                            <em class="glyphicon glyphicon-ok"></em>
+                                                            <strong> Info</strong>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="btn-switch btn-switch-warning">
+                                                        <input type="checkbox" id="input-btn-switch-warning">
+                                                        <label for="input-btn-switch-warning" class="btn btn-rounded btn-warning waves-effect waves-light">
+                                                            <em class="glyphicon glyphicon-ok"></em>
+                                                            <strong> Warning</strong>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="btn-switch btn-switch-danger">
+                                                        <input type="checkbox" id="input-btn-switch-danger" checked="">
+                                                        <label for="input-btn-switch-danger" class="btn btn-rounded btn-danger waves-effect waves-light">
+                                                            <em class="glyphicon glyphicon-ok"></em>
+                                                            <strong> Danger</strong>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="btn-switch btn-switch-inverse">
+                                                        <input type="checkbox" id="input-btn-switch-inverse">
+                                                        <label for="input-btn-switch-inverse" class="btn btn-rounded btn-inverse waves-effect waves-light">
+                                                            <em class="glyphicon glyphicon-ok"></em>
+                                                            <strong> Inverse</strong>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="btn-switch btn-switch-pink">
+                                                        <input type="checkbox" id="input-btn-switch-pink" checked="">
+                                                        <label for="input-btn-switch-pink" class="btn btn-rounded btn-pink waves-effect waves-light">
+                                                            <em class="glyphicon glyphicon-ok"></em>
+                                                            <strong> Pink</strong>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="btn-switch btn-switch-purple">
+                                                        <input type="checkbox" id="input-btn-switch-purple">
+                                                        <label for="input-btn-switch-purple" class="btn btn-rounded btn-purple waves-effect waves-light">
+                                                            <em class="glyphicon glyphicon-ok"></em>
+                                                            <strong> Purple</strong>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="btn-switch btn-switch-orange">
+                                                        <input type="checkbox" id="input-btn-switch-orange">
+                                                        <label for="input-btn-switch-orange" class="btn btn-rounded btn-orange waves-effect waves-light">
+                                                            <em class="glyphicon glyphicon-ok"></em>
+                                                            <strong> Orange</strong>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="btn-switch btn-switch-brown">
+                                                        <input type="checkbox" id="input-btn-switch-brown" checked="">
+                                                        <label for="input-btn-switch-brown" class="btn btn-rounded btn-brown waves-effect waves-light">
+                                                            <em class="glyphicon glyphicon-ok"></em>
+                                                            <strong> Brown</strong>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="btn-switch btn-switch-teal">
+                                                        <input type="checkbox" id="input-btn-switch-teal">
+                                                        <label for="input-btn-switch-teal" class="btn btn-rounded btn-teal waves-effect waves-light">
+                                                            <em class="glyphicon glyphicon-ok"></em>
+                                                            <strong> Teal</strong>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+                                                <!-- end button-demo -->
+                                            </div> <!-- end demo-box -->
+
+                                        </div> <!-- end col -->
+                                    </div>
+                                    <!-- end row -->
+
+
+                                    <div class="row m-t-50">
+                                        <div class="col-sm-12 col-xs-12">
+
+                                            <div class="demo-box">
+                                                <h4 class="header-title m-t-0 m-b-0">Multiple Select</h4>
+
+                                                <div class="row">
+                                                    <div class="col-lg-4 m-t-20">
+                                                        <h6>Default</h6>
+                                                        <p class="text-muted m-b-20 font-13">
+                                                            Use a <code>
+                                                                &lt;select multiple /&gt;</code>
+                                                            as your input element for a tags input, to gain true multivalue support.
+                                                        </p>
+
+                                                        <select multiple="multiple" class="multi-select" id="my_multi_select1" name="my_multi_select1[]" data-plugin="multiselect">
+                                                            <option>Dallas Cowboys
+                                                            <option>New York Giants
+                                                            <option selected="">Philadelphia Eagles
+                                                            <option selected="">Washington Redskins
+                                                            <option>Chicago Bears
+                                                            <option>Detroit Lions
+                                                            <option>Green Bay Packers
+                                                            <option>Minnesota Vikings
+                                                            <option selected="">Atlanta Falcons
+                                                            <option>Carolina Panthers
+                                                            <option>New Orleans Saints
+                                                            <option>Tampa Bay Buccaneers
+                                                            <option>Arizona Cardinals
+                                                            <option>St. Louis Rams
+                                                            <option>San Francisco 49ers
+                                                            <option>Seattle Seahawks
+                                                        </select>
+
+                                                    </div>
+
+                                                    <div class="col-lg-4 m-t-20">
+                                                        <h6>Grouped Options</h6>
+                                                        <p class="text-muted m-b-20 font-13">
+                                                            Use a <code>
+                                                                &lt;select multiple /&gt;</code>
+                                                            as your input element for a tags input, to gain true multivalue support.
+                                                        </p>
+
+                                                        <select multiple="multiple" class="multi-select" id="my_multi_select2" name="my_multi_select2[]" data-plugin="multiselect" data-selectable-optgroup="true">
+                                                            <optgroup label="NFC EAST">
+                                                                <option>Dallas Cowboys
+                                                                <option>New York Giants
+                                                                <option>Philadelphia Eagles
+                                                                <option>Washington Redskins
+                                                            </optgroup>
+                                                            <optgroup label="NFC NORTH">
+                                                                <option>Chicago Bears
+                                                                <option>Detroit Lions
+                                                                <option>Green Bay Packers
+                                                                <option>Minnesota Vikings
+                                                            </optgroup>
+                                                            <optgroup label="NFC SOUTH">
+                                                                <option>Atlanta Falcons
+                                                                <option>Carolina Panthers
+                                                                <option>New Orleans Saints
+                                                                <option>Tampa Bay Buccaneers
+                                                            </optgroup>
+                                                            <optgroup label="NFC WEST">
+                                                                <option>Arizona Cardinals
+                                                                <option>St. Louis Rams
+                                                                <option>San Francisco 49ers
+                                                                <option>Seattle Seahawks
+                                                            </optgroup>
+                                                        </select>
+
+                                                    </div>
+
+                                                    <div class="col-lg-4 m-t-20">
+                                                        <h6>Searchable</h6>
+                                                        <p class="text-muted m-b-20 font-13">
+                                                            Use a <code>
+                                                                &lt;select multiple /&gt;</code>
+                                                            as your input element for a tags input, to gain true multivalue support.
+                                                        </p>
+
+                                                        <select name="country" class="multi-select" multiple="" id="my_multi_select3">
+                                                            <option value="AF">Afghanistan
+                                                            <option value="AL">Albania
+                                                            <option value="DZ">Algeria
+                                                            <option value="AS">American Samoa
+                                                            <option value="AD">Andorra
+                                                            <option value="AO">Angola
+                                                            <option value="AI">Anguilla
+                                                            <option value="AQ">Antarctica
+                                                            <option value="AR">Argentina
+                                                            <option value="AM">Armenia
+                                                            <option value="AW">Aruba
+                                                            <option value="AU">Australia
+                                                            <option value="AT">Austria
+                                                            <option value="AZ">Azerbaijan
+                                                            <option value="BS">Bahamas
+                                                            <option value="BH">Bahrain
+                                                            <option value="BD">Bangladesh
+                                                            <option value="BB">Barbados
+                                                            <option value="BY">Belarus
+                                                            <option value="BE">Belgium
+                                                            <option value="BZ">Belize
+                                                            <option value="BJ">Benin
+                                                            <option value="BM">Bermuda
+                                                            <option value="BT">Bhutan
+                                                            <option value="BO">Bolivia
+                                                            <option value="BA">Bosnia and Herzegowina
+                                                            <option value="BW">Botswana
+                                                            <option value="BV">Bouvet Island
+                                                            <option value="BR">Brazil
+                                                            <option value="IO">British Indian Ocean Territory
+                                                            <option value="BN">Brunei Darussalam
+                                                            <option value="BG">Bulgaria
+                                                            <option value="BF">Burkina Faso
+                                                            <option value="BI">Burundi
+                                                            <option value="KH">Cambodia
+                                                            <option value="CM">Cameroon
+                                                            <option value="CA">Canada
+                                                            <option value="CV">Cape Verde
+                                                            <option value="KY">Cayman Islands
+                                                            <option value="CF">Central African Republic
+                                                            <option value="TD">Chad
+                                                            <option value="CL">Chile
+                                                            <option value="CN">China
+                                                            <option value="CX">Christmas Island
+                                                            <option value="CC">Cocos (Keeling) Islands
+                                                            <option value="CO">Colombia
+                                                            <option value="KM">Comoros
+                                                            <option value="CG">Congo
+                                                            <option value="CD">Congo, the Democratic Republic of the
+                                                            <option value="CK">Cook Islands
+                                                            <option value="CR">Costa Rica
+                                                            <option value="CI">Cote d'Ivoire
+                                                            <option value="HR">Croatia (Hrvatska)
+                                                            <option value="CU">Cuba
+                                                            <option value="CY">Cyprus
+                                                            <option value="CZ">Czech Republic
+                                                            <option value="DK">Denmark
+                                                            <option value="DJ">Djibouti
+                                                            <option value="DM">Dominica
+                                                            <option value="DO">Dominican Republic
+                                                            <option value="EC">Ecuador
+                                                            <option value="EG">Egypt
+                                                            <option value="SV">El Salvador
+                                                            <option value="GQ">Equatorial Guinea
+                                                            <option value="ER">Eritrea
+                                                            <option value="EE">Estonia
+                                                            <option value="ET">Ethiopia
+                                                            <option value="FK">Falkland Islands (Malvinas)
+                                                            <option value="FO">Faroe Islands
+                                                            <option value="FJ">Fiji
+                                                            <option value="FI">Finland
+                                                            <option value="FR">France
+                                                            <option value="GF">French Guiana
+                                                            <option value="PF">French Polynesia
+                                                            <option value="TF">French Southern Territories
+                                                            <option value="GA">Gabon
+                                                            <option value="GM">Gambia
+                                                            <option value="GE">Georgia
+                                                            <option value="DE">Germany
+                                                            <option value="GH">Ghana
+                                                            <option value="GI">Gibraltar
+                                                            <option value="GR">Greece
+                                                            <option value="GL">Greenland
+                                                            <option value="GD">Grenada
+                                                            <option value="GP">Guadeloupe
+                                                            <option value="GU">Guam
+                                                            <option value="GT">Guatemala
+                                                            <option value="GN">Guinea
+                                                            <option value="GW">Guinea-Bissau
+                                                            <option value="GY">Guyana
+                                                            <option value="HT">Haiti
+                                                            <option value="HM">Heard and Mc Donald Islands
+                                                            <option value="VA">Holy See (Vatican City State)
+                                                            <option value="HN">Honduras
+                                                            <option value="HK">Hong Kong
+                                                            <option value="HU">Hungary
+                                                            <option value="IS">Iceland
+                                                            <option value="IN">India
+                                                            <option value="ID">Indonesia
+                                                            <option value="IR">Iran (Islamic Republic of)
+                                                            <option value="IQ">Iraq
+                                                            <option value="IE">Ireland
+                                                            <option value="IL">Israel
+                                                            <option value="IT">Italy
+                                                            <option value="JM">Jamaica
+                                                            <option value="JP">Japan
+                                                            <option value="JO">Jordan
+                                                            <option value="KZ">Kazakhstan
+                                                            <option value="KE">Kenya
+                                                            <option value="KI">Kiribati
+                                                            <option value="KP">Korea, Democratic People's Republic of
+                                                            <option value="KR">Korea, Republic of
+                                                            <option value="KW">Kuwait
+                                                            <option value="KG">Kyrgyzstan
+                                                            <option value="LA">Lao People's Democratic Republic
+                                                            <option value="LV">Latvia
+                                                            <option value="LB">Lebanon
+                                                            <option value="LS">Lesotho
+                                                            <option value="LR">Liberia
+                                                            <option value="LY">Libyan Arab Jamahiriya
+                                                            <option value="LI">Liechtenstein
+                                                            <option value="LT">Lithuania
+                                                            <option value="LU">Luxembourg
+                                                            <option value="MO">Macau
+                                                            <option value="MK">Macedonia, The Former Yugoslav Republic of
+                                                            <option value="MG">Madagascar
+                                                            <option value="MW">Malawi
+                                                            <option value="MY">Malaysia
+                                                            <option value="MV">Maldives
+                                                            <option value="ML">Mali
+                                                            <option value="MT">Malta
+                                                            <option value="MH">Marshall Islands
+                                                            <option value="MQ">Martinique
+                                                            <option value="MR">Mauritania
+                                                            <option value="MU">Mauritius
+                                                            <option value="YT">Mayotte
+                                                            <option value="MX">Mexico
+                                                            <option value="FM">Micronesia, Federated States of
+                                                            <option value="MD">Moldova, Republic of
+                                                            <option value="MC">Monaco
+                                                            <option value="MN">Mongolia
+                                                            <option value="MS">Montserrat
+                                                            <option value="MA">Morocco
+                                                            <option value="MZ">Mozambique
+                                                            <option value="MM">Myanmar
+                                                            <option value="NA">Namibia
+                                                            <option value="NR">Nauru
+                                                            <option value="NP">Nepal
+                                                            <option value="NL">Netherlands
+                                                            <option value="AN">Netherlands Antilles
+                                                            <option value="NC">New Caledonia
+                                                            <option value="NZ">New Zealand
+                                                            <option value="NI">Nicaragua
+                                                            <option value="NE">Niger
+                                                            <option value="NG">Nigeria
+                                                            <option value="NU">Niue
+                                                            <option value="NF">Norfolk Island
+                                                            <option value="MP">Northern Mariana Islands
+                                                            <option value="NO">Norway
+                                                            <option value="OM">Oman
+                                                            <option value="PK">Pakistan
+                                                            <option value="PW">Palau
+                                                            <option value="PA">Panama
+                                                            <option value="PG">Papua New Guinea
+                                                            <option value="PY">Paraguay
+                                                            <option value="PE">Peru
+                                                            <option value="PH">Philippines
+                                                            <option value="PN">Pitcairn
+                                                            <option value="PL">Poland
+                                                            <option value="PT">Portugal
+                                                            <option value="PR">Puerto Rico
+                                                            <option value="QA">Qatar
+                                                            <option value="RE">Reunion
+                                                            <option value="RO">Romania
+                                                            <option value="RU">Russian Federation
+                                                            <option value="RW">Rwanda
+                                                            <option value="KN">Saint Kitts and Nevis
+                                                            <option value="LC">Saint LUCIA
+                                                            <option value="VC">Saint Vincent and the Grenadines
+                                                            <option value="WS">Samoa
+                                                            <option value="SM">San Marino
+                                                            <option value="ST">Sao Tome and Principe
+                                                            <option value="SA">Saudi Arabia
+                                                            <option value="SN">Senegal
+                                                            <option value="SC">Seychelles
+                                                            <option value="SL">Sierra Leone
+                                                            <option value="SG">Singapore
+                                                            <option value="SK">Slovakia (Slovak Republic)
+                                                            <option value="SI">Slovenia
+                                                            <option value="SB">Solomon Islands
+                                                            <option value="SO">Somalia
+                                                            <option value="ZA">South Africa
+                                                            <option value="GS">South Georgia and the South Sandwich Islands
+                                                            <option value="ES">Spain
+                                                            <option value="LK">Sri Lanka
+                                                            <option value="SH">St. Helena
+                                                            <option value="PM">St. Pierre and Miquelon
+                                                            <option value="SD">Sudan
+                                                            <option value="SR">Suriname
+                                                            <option value="SJ">Svalbard and Jan Mayen Islands
+                                                            <option value="SZ">Swaziland
+                                                            <option value="SE">Sweden
+                                                            <option value="CH">Switzerland
+                                                            <option value="SY">Syrian Arab Republic
+                                                            <option value="TW">Taiwan, Province of China
+                                                            <option value="TJ">Tajikistan
+                                                            <option value="TZ">Tanzania, United Republic of
+                                                            <option value="TH">Thailand
+                                                            <option value="TG">Togo
+                                                            <option value="TK">Tokelau
+                                                            <option value="TO">Tonga
+                                                            <option value="TT">Trinidad and Tobago
+                                                            <option value="TN">Tunisia
+                                                            <option value="TR">Turkey
+                                                            <option value="TM">Turkmenistan
+                                                            <option value="TC">Turks and Caicos Islands
+                                                            <option value="TV">Tuvalu
+                                                            <option value="UG">Uganda
+                                                            <option value="UA">Ukraine
+                                                            <option value="AE">United Arab Emirates
+                                                            <option value="GB">United Kingdom
+                                                            <option value="US">United States
+                                                            <option value="UM">United States Minor Outlying Islands
+                                                            <option value="UY">Uruguay
+                                                            <option value="UZ">Uzbekistan
+                                                            <option value="VU">Vanuatu
+                                                            <option value="VE">Venezuela
+                                                            <option value="VN">Viet Nam
+                                                            <option value="VG">Virgin Islands (British)
+                                                            <option value="VI">Virgin Islands (U.S.)
+                                                            <option value="WF">Wallis and Futuna Islands
+                                                            <option value="EH">Western Sahara
+                                                            <option value="YE">Yemen
+                                                            <option value="ZM">Zambia
+                                                            <option value="ZW">Zimbabwe
+                                                        </select>
+
+                                                    </div>
+
+                                                </div> <!-- end row -->
+                                            </div> <!-- end demo-box -->
+
+                                        </div> <!-- end col -->
+
+                                    </div>
+                                    <!-- end row -->
+
+
+                                    <div class="row m-t-50">
+                                        <div class="col-md-6">
+
+                                            <div class="demo-box">
+                                                <h4 class="header-title m-t-0 m-b-20">Select2</h4>
+
+                                                <h6 class="text-muted">Single Select</h6>
+                                                    <p class="text-muted m-b-15 font-13">
+                                                        Select2 can take a regular select box like this...
+                                                    </p>
+
+                                                    <select class="form-control select2">
+                                                        <option>Select
+                                                        <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                            <option value="AK">Alaska
+                                                            <option value="HI">Hawaii
+                                                        </optgroup>
+                                                        <optgroup label="Pacific Time Zone">
+                                                            <option value="CA">California
+                                                            <option value="NV">Nevada
+                                                            <option value="OR">Oregon
+                                                            <option value="WA">Washington
+                                                        </optgroup>
+                                                        <optgroup label="Mountain Time Zone">
+                                                            <option value="AZ">Arizona
+                                                            <option value="CO">Colorado
+                                                            <option value="ID">Idaho
+                                                            <option value="MT">Montana
+                                                            <option value="NE">Nebraska
+                                                            <option value="NM">New Mexico
+                                                            <option value="ND">North Dakota
+                                                            <option value="UT">Utah
+                                                            <option value="WY">Wyoming
+                                                        </optgroup>
+                                                        <optgroup label="Central Time Zone">
+                                                            <option value="AL">Alabama
+                                                            <option value="AR">Arkansas
+                                                            <option value="IL">Illinois
+                                                            <option value="IA">Iowa
+                                                            <option value="KS">Kansas
+                                                            <option value="KY">Kentucky
+                                                            <option value="LA">Louisiana
+                                                            <option value="MN">Minnesota
+                                                            <option value="MS">Mississippi
+                                                            <option value="MO">Missouri
+                                                            <option value="OK">Oklahoma
+                                                            <option value="SD">South Dakota
+                                                            <option value="TX">Texas
+                                                            <option value="TN">Tennessee
+                                                            <option value="WI">Wisconsin
+                                                        </optgroup>
+                                                        <optgroup label="Eastern Time Zone">
+                                                            <option value="CT">Connecticut
+                                                            <option value="DE">Delaware
+                                                            <option value="FL">Florida
+                                                            <option value="GA">Georgia
+                                                            <option value="IN">Indiana
+                                                            <option value="ME">Maine
+                                                            <option value="MD">Maryland
+                                                            <option value="MA">Massachusetts
+                                                            <option value="MI">Michigan
+                                                            <option value="NH">New Hampshire
+                                                            <option value="NJ">New Jersey
+                                                            <option value="NY">New York
+                                                            <option value="NC">North Carolina
+                                                            <option value="OH">Ohio
+                                                            <option value="PA">Pennsylvania
+                                                            <option value="RI">Rhode Island
+                                                            <option value="SC">South Carolina
+                                                            <option value="VT">Vermont
+                                                            <option value="VA">Virginia
+                                                            <option value="WV">West Virginia
+                                                        </optgroup>
+                                                    </select>
+
+                                                    <h6 class="m-t-30 text-muted">Multiple Select</h6>
+                                                    <p class="text-muted m-b-15 font-13">
+                                                        Select2 can take a regular select box like this...
+                                                    </p>
+
+                                                    <select class="select2 form-control select2-multiple" multiple="multiple" multiple="" data-placeholder="Choose ...">
+                                                        <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                            <option value="AK">Alaska
+                                                            <option value="HI">Hawaii
+                                                        </optgroup>
+                                                        <optgroup label="Pacific Time Zone">
+                                                            <option value="CA">California
+                                                            <option value="NV">Nevada
+                                                            <option value="OR">Oregon
+                                                            <option value="WA">Washington
+                                                        </optgroup>
+                                                        <optgroup label="Mountain Time Zone">
+                                                            <option value="AZ">Arizona
+                                                            <option value="CO">Colorado
+                                                            <option value="ID">Idaho
+                                                            <option value="MT">Montana
+                                                            <option value="NE">Nebraska
+                                                            <option value="NM">New Mexico
+                                                            <option value="ND">North Dakota
+                                                            <option value="UT">Utah
+                                                            <option value="WY">Wyoming
+                                                        </optgroup>
+                                                        <optgroup label="Central Time Zone">
+                                                            <option value="AL">Alabama
+                                                            <option value="AR">Arkansas
+                                                            <option value="IL">Illinois
+                                                            <option value="IA">Iowa
+                                                            <option value="KS">Kansas
+                                                            <option value="KY">Kentucky
+                                                            <option value="LA">Louisiana
+                                                            <option value="MN">Minnesota
+                                                            <option value="MS">Mississippi
+                                                            <option value="MO">Missouri
+                                                            <option value="OK">Oklahoma
+                                                            <option value="SD">South Dakota
+                                                            <option value="TX">Texas
+                                                            <option value="TN">Tennessee
+                                                            <option value="WI">Wisconsin
+                                                        </optgroup>
+                                                        <optgroup label="Eastern Time Zone">
+                                                            <option value="CT">Connecticut
+                                                            <option value="DE">Delaware
+                                                            <option value="FL">Florida
+                                                            <option value="GA">Georgia
+                                                            <option value="IN">Indiana
+                                                            <option value="ME">Maine
+                                                            <option value="MD">Maryland
+                                                            <option value="MA">Massachusetts
+                                                            <option value="MI">Michigan
+                                                            <option value="NH">New Hampshire
+                                                            <option value="NJ">New Jersey
+                                                            <option value="NY">New York
+                                                            <option value="NC">North Carolina
+                                                            <option value="OH">Ohio
+                                                            <option value="PA">Pennsylvania
+                                                            <option value="RI">Rhode Island
+                                                            <option value="SC">South Carolina
+                                                            <option value="VT">Vermont
+                                                            <option value="VA">Virginia
+                                                            <option value="WV">West Virginia
+                                                        </optgroup>
+                                                    </select>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="col-md-6">
+
+                                            <form class="demo-box">
+                                                <h4 class="header-title m-t-0 m-b-20">Auto Complete</h4>
+
+                                                <div class="form-group m-b-30">
+                                                    <label class="control-label text-muted">Ajax Lookup</label>
+                                                    <p class="text-muted m-b-15 font-13">
+                                                        Your awesome text goes here
+                                                    </p>
+
+                                                    <input type="text" name="country" id="autocomplete-ajax" class="form-control">
+                                                    <input type="text" name="country" id="autocomplete-ajax-x" disabled="disabled" class="form-control" style="color: #CCC; position: absolute; background: transparent; z-index: 1;display: none;">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label text-muted">Local Lookup and Grouping</label>
+                                                    <p class="text-muted m-b-15 font-13">
+                                                        Your awesome text goes here
+                                                    </p>
+                                                    <input type="text" name="country" id="autocomplete" class="form-control">
+                                                </div>
+
+                                            </form>
+
+                                        </div> <!-- end col -->
+
+                                    </div>
+                                    <!-- end row -->
+
+
+                                    <div class="row m-t-50">
+                                        <div class="col-lg-12">
+                                            <div class="demo-box p-b-0">
+                                                <h4 class="header-title m-t-0 m-b-0">Bootstrap MaxLength</h4>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="demo-box">
+                                                        <h6 class="text-muted"><b>Default usage</b></h6>
+                                                        <p class="text-muted m-b-15 font-13">
+                                                            The badge will show up by default when the remaining chars are 10 or less:
+                                                        </p>
+                                                        <input type="text" class="form-control" maxlength="25" name="defaultconfig" id="defaultconfig">
+
+                                                        <div class="m-t-20">
+                                                            <h6 class="text-muted"><b>Threshold value</b></h6>
+                                                            <p class="text-muted m-b-15 font-13">
+                                                                Do you want the badge to show up when there are 20 chars or less? Use the <code>threshold</code> option:
+                                                            </p>
+                                                            <input type="text" maxlength="25" name="thresholdconfig" class="form-control" id="thresholdconfig">
+                                                        </div>
+
+                                                        <div class="m-t-20">
+                                                            <h6 class="text-muted"><b>All the options</b></h6>
+                                                            <p class="text-muted m-b-15 font-13">
+                                                                Please note: if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.
+                                                            </p>
+                                                            <input type="text" class="form-control" maxlength="25" name="alloptions" id="alloptions">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="demo-box">
+
+                                                        <h6 class="text-muted"><b>Position</b></h6>
+                                                        <p class="text-muted m-b-15 font-13">
+                                                            All you need to do is specify the <code>placement</code> option, with one of those strings. If none
+                                                            is specified, the positioning will be defauted to 'bottom'.
+                                                        </p>
+                                                        <input type="text" class="form-control" maxlength="25" name="placement" id="placement">
+
+                                                        <div class="m-t-20">
+                                                            <h6 class="text-muted"><b>textareas</b></h6>
+                                                            <p class="text-muted m-b-15 font-13">
+                                                                Bootstrap maxlength supports textarea as well as inputs. Even on old IE.
+                                                            </p>
+                                                            <textarea id="textarea" class="form-control" maxlength="225" rows="3" placeholder="This textarea has a limit of 225 chars."></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end row -->
+
+                                        </div> <!-- end col -->
+
+                                    </div>
+                                    <!-- end row -->
+
+
+
+                                    <div class="row m-t-50">
+                                        <div class="col-sm-12">
+                                            <div class="demo-box p-b-0">
+                                                <h4 class="m-t-0 header-title"><b>Bootstrap TouchSpin</b></h4>
+                                                <p class="text-muted font-13">
+                                                    You can limit the number of elements you are allowed to select via the
+                                                    <code>
+                                                        data-max-option
+                                                    </code>
+                                                    attribute. It also works for option groups.
+                                                </p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="demo-box">
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label class="control-label">Vertical button alignment</label>
+                                                                <input class="vertical-spin" type="text" value="" name="vertical-spin">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">Using data attributes</label>
+                                                                <input id="demo0" type="text" value="55" name="demo0" data-bts-min="0" data-bts-max="100" data-bts-init-val="" data-bts-step="1" data-bts-decimal="0" data-bts-step-interval="100" data-bts-force-step-divisibility="round" data-bts-step-interval-delay="500" data-bts-prefix="" data-bts-postfix="" data-bts-prefix-extra-class="" data-bts-postfix-extra-class="" data-bts-booster="true" data-bts-boostat="10" data-bts-max-boosted-step="false" data-bts-mousewheel="true" data-bts-button-down-class="btn btn-default" data-bts-button-up-class="btn btn-default">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">Example with postfix (large)</label>
+                                                                <input id="demo1" type="text" value="55" name="demo1">
+                                                            </div>
+                                                            <div class="form-group m-b-0">
+                                                                <label class="control-label">With prefix </label>
+                                                                <input id="demo2" type="text" value="0" name="demo2" class=" form-control">
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="demo-box">
+                                                        <form>
+
+                                                            <div class="form-group">
+                                                                <label class="control-label">Init with empty value:</label>
+                                                                <input id="demo3" type="text" value="" name="demo3">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">Value attribute is not set (applying settings.initval)</label>
+                                                                <input id="demo3_21" type="text" value="" name="demo3_21">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">Value is set explicitly to 33 (skipping settings.initval) </label>
+                                                                <input id="demo3_22" type="text" value="33" name="demo3_22">
+                                                            </div>
+                                                            <div class="form-group m-b-0">
+                                                                <label class="control-label">Button group</label>
+                                                                <div class="input-group">
+                                                                    <input id="demo5" type="text" class="form-control" name="demo5" value="50">
+                                                                    <div class="input-group-btn">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                                            <span class="caret"></span>
+                                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu pull-right" role="menu">
+                                                                            <li>
+                                                                                <a href="#">Action</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">Another action</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">Something else here</a>
+                                                                            </li>
+                                                                            <li class="divider"></li>
+                                                                            <li>
+                                                                                <a href="#">Separated link</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end row -->
+                                        </div> <!-- end col -->
+                                    </div>
+                                    <!-- end row -->
+
+
+                                    <!-- Bootstrap-select -->
+                                    <div class="row m-t-50">
+                                        <div class="col-sm-12">
+                                            <div class="demo-box">
+                                                <h4 class="m-t-0 header-title"><b>Bootstrap-select</b></h4>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="demo-box">
+                                                        <p class="text-muted m-b-15 font-13">
+                                                            Create your
+                                                            <code>
+                                                                &lt;select&gt;
+                                                            </code>
+                                                            with the
+                                                            <code>
+                                                                .selectpicker
+                                                            </code>
+                                                            class.
+                                                        </p>
+                                                        <select class="selectpicker" data-style="btn-custom">
+                                                            <option>Mustard
+                                                            <option>Ketchup
+                                                            <option>Relish
+                                                        </select>
+
+                                                        <p class="text-muted m-b-15 m-t-30 font-13">
+                                                            It also works with option groups:
+                                                        </p>
+                                                        <select class="selectpicker" data-style="btn-default">
+                                                            <optgroup label="Picnic">
+                                                                <option>Mustard
+                                                                <option>Ketchup
+                                                                <option>Relish
+                                                            </optgroup>
+                                                            <optgroup label="Camping">
+                                                                <option>Tent
+                                                                <option>Flashlight
+                                                                <option>Toilet Paper
+                                                            </optgroup>
+                                                        </select>
+
+                                                        <p class="text-muted m-b-15 m-t-30 font-13">
+                                                            You can also show the tick icon on single <code>select</code> with the <code>show-tick</code> class:
+                                                        </p>
+
+                                                        <select class="selectpicker show-tick" data-style="btn-success">
+                                                            <option>Mustard
+                                                            <option>Ketchup
+                                                            <option>Relish
+                                                        </select>
+
+                                                        <p class="text-muted m-b-15 m-t-30 font-13">
+                                                            And with multiple selects:
+                                                        </p>
+                                                        <select class="selectpicker" multiple="" data-style="btn-default">
+                                                            <option>Mustard
+                                                            <option>Ketchup
+                                                            <option>Relish
+                                                        </select>
+
+                                                        <p class="text-muted m-b-15 m-t-30 font-13">
+                                                            You can limit the number of elements you are allowed to select via the
+                                                            <code>
+                                                                data-max-option
+                                                            </code>
+                                                            attribute. It also works for option groups.
+                                                        </p>
+
+                                                        <select class="selectpicker m-b-0" multiple="" data-max-options="2" data-style="btn-pink">
+                                                            <option>Mustard
+                                                            <option>Ketchup
+                                                            <option>Relish
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="demo-box">
+                                                        <p class="text-muted m-b-15 font-13">
+                                                            You can limit the number of elements you are allowed to select via the
+                                                            <code>
+                                                                data-max-option
+                                                            </code>
+                                                            attribute. It also works for option groups.
+                                                        </p>
+
+                                                        <select class="selectpicker" data-style="btn-default btn-rounded">
+                                                            <option>Mustard
+                                                            <option>Ketchup
+                                                            <option>Relish
+                                                        </select>
+
+                                                        <br>
+                                                        <br>
+                                                        <select class="selectpicker" data-style="btn-primary btn-bordered">
+                                                            <option>Mustard
+                                                            <option>Ketchup
+                                                            <option>Relish
+                                                        </select>
+
+                                                        <br>
+                                                        <br>
+                                                        <select class="selectpicker" data-style="btn-teal">
+                                                            <option>Mustard
+                                                            <option>Ketchup
+                                                            <option>Relish
+                                                        </select>
+
+                                                        <br>
+                                                        <br>
+                                                        <select class="selectpicker" data-style="btn-warning">
+                                                            <option>Mustard
+                                                            <option>Ketchup
+                                                            <option>Relish
+                                                        </select>
+
+                                                        <br>
+                                                        <br>
+                                                        <select class="selectpicker" data-style="btn-danger btn-bordered">
+                                                            <option>Mustard
+                                                            <option>Ketchup
+                                                            <option>Relish
+                                                        </select>
+
+                                                        <br>
+                                                        <br>
+                                                        <select class="selectpicker" data-style="btn-purple">
+                                                            <option>Mustard
+                                                            <option>Ketchup
+                                                            <option>Relish
+                                                        </select>
+
+                                                        <p class="text-muted m-b-15 m-t-30 font-13">
+                                                            Add an icon to an option or optgroup with the <code>data-icon</code> attribute:
+                                                        </p>
+                                                        <select class="selectpicker m-b-0" data-style="btn-default">
+                                                            <option data-icon="glyphicon-glass text-primary">Mustard
+                                                            <option data-icon="glyphicon-heart">Ketchup
+                                                            <option data-icon="glyphicon-film">Relish
+                                                            <option data-icon="glyphicon-home">Mayonnaise
+                                                            <option data-icon="glyphicon-print">Barbecue Sauce
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="demo-box">
+                                                        <p class="text-muted m-b-15 font-13">
+                                                            You can add a search input by passing <code>data-live-search="true"</code> attribute:
+                                                        </p>
+
+                                                        <select class="selectpicker" data-live-search="true" data-style="btn-orange">
+                                                            <option>Hot Dog, Fries and a Soda
+                                                            <option>Burger, Shake and a Smile
+                                                            <option>Sugar, Spice and all things nice
+                                                        </select>
+
+                                                        <p class="text-muted m-b-15 m-t-30 font-13">
+                                                            You can also use the <code>
+                                                                title</code> attribute as an alternative to display when the option is
+                                                            selected:
+                                                        </p>
+
+                                                        <select class="selectpicker" data-live-search="true" data-style="btn-default">
+                                                            <option title="Combo 1">Hot Dog, Fries and a Soda
+                                                            <option title="Combo 2">Burger, Shake and a Smile
+                                                            <option title="Combo 3">Sugar, Spice and all things nice
+                                                        </select>
+
+                                                        <p class="text-muted m-b-15 m-t-30 font-13">
+                                                            Using the <code>data-selected-text-format</code> attribute on a <code>multiple select</code>
+                                                            you can specify how the selection is displayed.
+                                                        </p>
+
+                                                        <select class="selectpicker" multiple="" data-selected-text-format="count" data-style="btn-default">
+                                                            <option>Mustard
+                                                            <option>Ketchup
+                                                            <option>Relish
+                                                        </select>
+
+                                                        <br>
+                                                        <br>
+                                                        <select class="selectpicker" multiple="" data-selected-text-format="count > 3" data-style="btn-default">
+                                                            <option>Mustard
+                                                            <option>Ketchup
+                                                            <option>Relish
+                                                            <option>Onions
+                                                        </select>
+
+                                                        <p class="text-muted m-b-15 m-t-30 font-13">
+                                                            Add the <code>disabled</code> attribute to the select to apply the <code>disabled</code> class.
+                                                        </p>
+                                                        <select class="selectpicker m-b-0" data-style="btn-teal" disabled="">
+                                                            <option>Mustard
+                                                            <option>Ketchup
+                                                            <option>Relish
+                                                        </select>
+
+
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end row -->
+
+                                        </div> <!-- end col -->
+                                    </div>
+                                    <!-- end row -->
+
+
+                                    <div class="row m-t-50">
+                                        <div class="col-sm-12">
+                                            <div class="demo-box p-b-0">
+                                                <h4 class="m-t-0 header-title"><b>Bootstrap FileStyle</b></h4>
+                                                <p class="text-muted m-b-15 font-13">
+                                                    You can limit the number of elements you are allowed to select via the
+                                                    <code>
+                                                        data-max-option
+                                                    </code>
+                                                    attribute. It also works for option groups.
+                                                </p>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="demo-box">
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label class="control-label">Default file input</label>
+                                                                <input type="file" class="filestyle" data-buttonname="btn-default">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">File style without input</label>
+                                                                <input type="file" class="filestyle" data-input="false">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">File style without icon</label>
+                                                                <input type="file" class="filestyle" data-icon="false" data-buttonname="btn-default">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">File style with custom text</label>
+                                                                <input type="file" class="filestyle" data-buttontext="Select file" data-buttonname="btn-default">
+                                                            </div>
+                                                            <div class="form-group m-b-0">
+                                                                <label class="control-label">File style with button style</label>
+                                                                <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="demo-box">
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label class="control-label">Small file style</label>
+                                                                <input type="file" class="filestyle" data-size="sm">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">File style with custom icon</label>
+                                                                <input type="file" class="filestyle" data-iconname="fa fa-cloud-upload">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">Disable file style</label>
+                                                                <input type="file" class="filestyle" data-disabled="true">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">File style before button</label>
+                                                                <input type="file" class="filestyle" data-buttonbefore="true">
+                                                            </div>
+
+                                                            <div class="form-group m-b-0">
+                                                                <label class="control-label">File style placeholder</label>
+                                                                <input type="file" class="filestyle" data-placeholder="No file">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                            </div> <!-- end row -->
+                                        </div> <!-- end col -->
+                                    </div>
+                                    <!-- end row -->
+
+
+                        		</div> <!-- end card-box -->
+                            </div><!-- end col-->
+
+                        </div>
+                        <!-- end row -->
+
+
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <footer class="footer text-right">
+                    2016 © Zircos.
+                </footer>
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+            <!-- Right Sidebar -->
+            <div class="side-bar right-bar">
+                <a href="javascript:void(0);" class="right-bar-toggle">
+                    <i class="mdi mdi-close-circle-outline"></i>
+                </a>
+                <h4 class="">Settings</h4>
+                <div class="setting-list nicescroll">
+                    <div class="row m-t-20">
+                        <div class="col-xs-8">
+                            <h5 class="m-0">Notifications</h5>
+                            <p class="text-muted m-b-0"><small>Do you need them?</small></p>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#7fc1fc" data-size="small">
+                        </div>
+                    </div>
+
+                    <div class="row m-t-20">
+                        <div class="col-xs-8">
+                            <h5 class="m-0">API Access</h5>
+                            <p class="m-b-0 text-muted"><small>Enable/Disable access</small></p>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#7fc1fc" data-size="small">
+                        </div>
+                    </div>
+
+                    <div class="row m-t-20">
+                        <div class="col-xs-8">
+                            <h5 class="m-0">Auto Updates</h5>
+                            <p class="m-b-0 text-muted"><small>Keep up to date</small></p>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#7fc1fc" data-size="small">
+                        </div>
+                    </div>
+
+                    <div class="row m-t-20">
+                        <div class="col-xs-8">
+                            <h5 class="m-0">Online Status</h5>
+                            <p class="m-b-0 text-muted"><small>Show your status to all</small></p>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            <input type="checkbox" checked="" data-plugin="switchery" data-color="#7fc1fc" data-size="small">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Right-bar -->
+
+        </div>
+        <!-- END wrapper -->
+
+
+
+        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery  -->
+        <script src="assets\js\jquery.min.js"></script>
+        <script src="assets\js\bootstrap.min.js"></script>
+        <script src="assets\js\detect.js"></script>
+        <script src="assets\js\fastclick.js"></script>
+        <script src="assets\js\jquery.blockUI.js"></script>
+        <script src="assets\js\waves.js"></script>
+        <script src="assets\js\jquery.slimscroll.js"></script>
+        <script src="assets\js\jquery.scrollTo.min.js"></script>
+        <script src="../plugins/switchery/switchery.min.js"></script>
+
+        <script src="../plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+        <script type="text/javascript" src="../plugins/multiselect/js/jquery.multi-select.js"></script>
+        <script type="text/javascript" src="../plugins/jquery-quicksearch/jquery.quicksearch.js"></script>
+        <script src="../plugins/select2/js/select2.min.js" type="text/javascript"></script>
+        <script src="../plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+        <script src="../plugins/bootstrap-filestyle/js/bootstrap-filestyle.min.js" type="text/javascript"></script>
+        <script src="../plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js" type="text/javascript"></script>
+        <script src="../plugins/bootstrap-maxlength/bootstrap-maxlength.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript" src="../plugins/autocomplete/jquery.mockjax.js"></script>
+        <script type="text/javascript" src="../plugins/autocomplete/jquery.autocomplete.min.js"></script>
+        <script type="text/javascript" src="../plugins/autocomplete/countries.js"></script>
+        <script type="text/javascript" src="assets\pages\jquery.autocomplete.init.js"></script>
+
+        <script type="text/javascript" src="assets\pages\jquery.form-advanced.init.js"></script>
+
+
+        <!-- App js -->
+        <script src="assets\js\jquery.core.js"></script>
+        <script src="assets\js\jquery.app.js"></script>
+
+    </body>
+</html>

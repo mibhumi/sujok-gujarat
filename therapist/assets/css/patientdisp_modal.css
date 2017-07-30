@@ -1,0 +1,32 @@
+		#tr2:hover{
+			background-color:#C9E4FF;
+			color:black;
+			cursor:pointer;
+		}
+		
+		.modal-content{
+			background-color:rgba(242,246,248,0.92);
+		}
+		
+	
+		
+		.modal-dialog {	
+		
+		text-align: left;	
+		vertical-align: middle;
+		}
+		
+		.modal .modal-dialog .modal-content {
+    		height: 295px;
+    width: 500px;
+    border-color: transparent;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+#MyModal2{
+	        height:auto;
+			width:50%;
+			margin-left: 25%;
+			margin-top: 5%;
+		}

@@ -1,0 +1,29 @@
+		#tr2:hover{
+			background-color:#C9E4FF;
+			color:black;
+			cursor:pointer;
+		}
+		
+		.modal-content{
+			background-color:rgba(242,246,248,0.92);
+		}
+		
+		.modal{
+			margin-top: 100px;
+			margin-left: 134px;
+			text-align: center;
+		}
+		
+		.modal::before {
+		content: "";	  
+		display: inline-block;
+		height: 100%;		
+		margin-right: -4px;
+		vertical-align: middle;
+		}
+		
+		.modal-dialog {	
+		display: inline-block;	
+		text-align: left;	
+		vertical-align: middle;
+		}	
