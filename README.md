@@ -1,4 +1,4 @@
-# 👩‍⚕️ Sujok Gujarat 👨‍⚕️
+# 👩‍⚕️ Sujok Automation 👨‍⚕️
 
 Sujok is basically a therapy introduced by japanese. Sujok Automation is made keeping in mind the need of all the Sujok centres in Surat. Automating the Manual work done by the Therapists and Doctors in respective Centers was our Main Motto, and thereby achieving optimisation.
 
